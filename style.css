@@ -1,9 +1,17 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+@font-face {
+    font-family: mnl;
+    src: url(mnl.ttf);
+  }
+
 
 .section1 {
     height: 100%;
@@ -17,7 +25,7 @@
     width: 100%;
     background: #EDEDED;
     align-items: center;
-    padding: 8px;
+    padding: 3px;
 }
 
 .logo {
@@ -26,14 +34,56 @@
     margin-left: 70px;
 }
 
+.logotext {
+    padding: 20px;
+    margin-left: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav span {
+    animation: blink 1s linear infinite;
+    font-family: 'JetBrains Mono', monospace;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
 .nav  a {
     color: #000000;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 20px;
     text-decoration: none;
     font-family: avenir;
     text-transform: uppercase;
-    margin-right: 22px;
+    margin-right: 80px;
+}
+
+.naveffect {
+    position: relative;
+}
+.naveffect::after {
+    content: "";
+    background: white;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.naveffect:hover::after {
+    height: calc(100% + 8px);
 }
 
 .cont {
@@ -134,7 +184,6 @@
     background: url("bg12.png");
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
@@ -173,9 +222,15 @@
 }
 
 .subtext {
-    font-weight: 600;
+    font-weight: 200;
     font-size: 24px;
     color: #000;
+    text-align: justify;
+}
+
+a.discrd {
+    color: #1DB954;
+    font-weight: bold;
 }
 
 @media screen and (max-width:1450px) {
@@ -404,3 +459,60 @@
         font-size: 17px;
     }
 }
+
+
+.section3 {
+    height: 100%;
+    width: 100%;
+}
+
+.cont3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 17em;
+}
+
+.text3 {
+    font-size: 55px;
+    font-family: 'mnl';
+}
+
+.line {
+    width: 22%;
+    height: 2px;
+    background: #000;
+}
+
+.line2 {
+    width: 25%;
+    height: 2px;
+    background: #000;
+}
+
+.line3 {
+    height: 2px;
+    background: #000;
+    width: 0%;
+    
+}
+
+.fb {
+    transition: all .25s ease;
+}
+
+.fb:hover {
+    color: #3b5998;
+}
+
+.fb:hover .line3 {
+    width: 100%;
+    transition: all .25s ease;
+}
+
+.subtext3 {
+    font-size: 35px;
+    font-family: 'mnl';
+}
+
