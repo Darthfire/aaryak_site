@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: Avenir;
 }
 
 .section1 {
@@ -117,9 +117,41 @@ a {
   }
 }
 
+@media screen and (max-width:770px) {
+  .logotext {
+    margin-left: 30px;
+    font-size: 35px;
+  }
+  
+  .nav a {
+    margin-right: 40px;
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .logotext {
+    margin-left: 25px;
+    font-size: 30px;
+  }
+  
+  .nav a {
+    margin-right: 30px;
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .bio {
     font-size: 48px;
+  }
+
+  .logotext {
+    margin-left: 20px;
+  }
+
+  .nav a {
+    margin-right: 22px;
   }
 }
 
@@ -128,13 +160,14 @@ a {
     font-size: 50px;
   }
 
-  .logo {
-    margin-left: 60px;
+  .logotext {
+    margin-left: 15px;
+    font-size: 27px;
   }
 
   .nav a {
-    font-size: 18px;
-    margin-right: 20px;
+    font-size: 17px;
+    margin-right: 16px;
   }
 }
 
@@ -143,13 +176,14 @@ a {
     font-size: 47px;
   }
 
-  .logo {
-    margin-left: 40px;
+  .logotext {
+    margin-left: 10px;
+    font-size: 24px;
   }
 
   .nav a {
     font-size: 16px;
-    margin-right: 17px;
+    margin-right: 13px;
   }
 }
 
@@ -206,8 +240,8 @@ a {
 .subtitle {
   color: #ff8484;
   font-weight: 900;
-  font-style: 23px;
-  letter-spacing: 0.2em;
+  font-size: 19px;
+  letter-spacing: 0.1em;
 }
 
 .subtext {
@@ -455,66 +489,35 @@ a.discrd {
   padding: 8em;
 }
 
-/* .text3 {
-    font-size: 55px;
-    font-family: 'mnl';
-}
-
-.line {
-    width: 22%;
-    height: 2px;
-    background: #000;
-}
-
-.line2 {
-    width: 25%;
-    height: 2px;
-    background: #000;
-}
-
-.line3 {
-    height: 2px;
-    background: #000;
-    width: 0%;
-    
-}
-
-.fb {
-    transition: all .25s ease;
-}
-
-.fb:hover {
-    color: #3b5998;
-}
-
-.fb:hover .line3 {
-    width: 100%;
-    transition: all .25s ease;
-}
-
-.subtext3 {
-    font-size: 35px;
-    font-family: 'mnl';
-} */
 
 .cont3 h1 {
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(
     160deg,
-    rgb(193 67 180) 0,
-    rgb(255 0 118) 100%
+    rgb(239 0 215) 0,
+    rgb(72 0 236) 100%
   );
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  /* color: #fff; */
   font-size: 72px;
+  font-family: Avenir;
+  color: #101010;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #cccccc;
+  white-space: nowrap;
 }
 
 .cardscont {
   display: flex;
   align-items: center;
-  padding-top: 1rem;
-  height: 25%;
-  
+  padding-top: 3rem; 
+}
+
+.cardscont2 {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem; 
 }
 .cards {
   display: flex;
@@ -522,22 +525,26 @@ a.discrd {
   background: #000;
   border-radius: 5px;
   align-items: center;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-  font-size: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
   color: #fff;
   cursor: pointer;
   margin-right: 20px;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
-  justify-content: space-between;
+  justify-content: space-evenly;
   transition: transform 0.6s ease, background 0.6s ease;
   -webkit-transition: transform 0.6s ease, background 0.6s ease;
+  font-family: Avenir;
+  max-width: 206.19;
+  max-height: 186;
+  white-space: nowrap;
 }
 
 .cards > div {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .mail {
@@ -548,4 +555,77 @@ a.discrd {
 .cardm:hover {
   transform: translateY(-10px);
   background: linear-gradient(to bottom,rgba(255,255,255,.05),rgba(255,255,255,0));
+}
+
+.cont3 p{
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  padding-top: 1em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-family: Avenir;
+  opacity: 0.8;
+  text-align: justify;
+}
+
+.cards2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  margin-right: 20px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+  transition: transform 0.6s ease, background 0.6s ease;
+  -webkit-transition: transform 0.6s ease, background 0.6s ease;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #fff;
+  min-height: 3rem;
+  width: 3rem;
+}
+
+@media screen and (max-width:930px) {
+  .cont3 {
+    padding-left: 3em;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .cont3 h1 {
+    font-size: 50px;
+  }
+
+  .cards {
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
+    max-width: 186.97;
+    max-height: 186;
+  }
+
+  .cont3 p {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width:675px) {
+  .cardscont {
+    flex-direction: column;
+    align-items: stretch;
+    align-self: stretch;
+    padding-top: 0;
+  }
+  .cards {
+    margin-top: 15px;
+    max-width: 100%;
+    max-height: 150px;
+  }
+
+  .cont3 h1 {
+    font-size: 39px;
+  }
+  .cont3 {
+    padding: 1em;
+    padding-left: 2em;
+  }
 }
