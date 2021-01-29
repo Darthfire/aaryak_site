@@ -520,7 +520,6 @@ a.discrd {
   -webkit-text-fill-color: transparent; */
   /* color: #fff; */
   font-size: 72px;
-  font-family: Avenir;
   color: #101010;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #cccccc;
@@ -583,7 +582,6 @@ a.discrd {
   padding-top: 1em;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  font-family: Avenir;
   opacity: 0.8;
   text-align: justify;
 }
