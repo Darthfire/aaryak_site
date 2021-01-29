@@ -2,7 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Avenir;
+  font-family: "am";
+}
+
+@font-face {
+  src: url('ab.ttf');
+  font-family: "ab";
+}
+
+@font-face {
+  src: url('al.ttf');
+  font-family: "al";
+}
+
+@font-face {
+  src: url('am.ttf');
+  font-family: "am";
 }
 
 html {
@@ -633,3 +648,4 @@ a.discrd {
     padding-left: 2em;
   }
 }
+
