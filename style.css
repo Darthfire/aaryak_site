@@ -5,6 +5,10 @@
   font-family: Avenir;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section1 {
   height: 100%;
   width: 100%;
@@ -202,7 +206,7 @@ a {
   }
 }
 
-.section2 {
+#section2 {
   height: 100%;
   width: 100%;
   background: url("bg12.png");
@@ -408,7 +412,7 @@ a.discrd {
 }
 
 @media screen and (max-width: 500px) {
-  .section2 {
+  #section2 {
     height: auto;
     background: #fff;
   }
@@ -475,7 +479,7 @@ a.discrd {
   }
 }
 
-.section3 {
+#section3 {
   height: 100%;
   width: 100%;
   background: #101010;
